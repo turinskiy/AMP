@@ -50,7 +50,10 @@
                         <!-- <ai-star [rating]='product.starRating'
                                 (ratingClicked)='onRatingClicked($event)'>
                         </ai-star> -->
-                        {{product.starRating}}
+                        <!-- {{product.starRating}} -->
+                        <pm-star 
+                            [rating]="product.starRating"
+                            (ratingClicked)="onRatingClicked($event)"></pm-star>
                    </td>
                    <td>
                         <!-- <a class="btn btn-primary" 
